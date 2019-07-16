@@ -14,14 +14,14 @@ This repository provides:
 
 
 ## Requirements
-The current version of the code has been tested with following libs:
+- The current version of the code has been tested with following libs:
 
-* `python 3.7`
-* `numpy 1.16.2`
-* `pandas 0.24.2`
-* `pytorch 1.1.0`
-* `torchvision 0.2.2`
-* `PIL 6.0.0`
+  * `python 3.7`
+  * `numpy 1.16.2`
+  * `pandas 0.24.2`
+  * `pytorch 1.1.0`
+  * `torchvision 0.2.2`
+  * `PIL 6.0.0`
 
 - recommend install in virtual environment
 ```
