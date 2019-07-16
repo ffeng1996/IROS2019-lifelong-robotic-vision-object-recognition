@@ -1,5 +1,5 @@
 # IROS2019 lifelong Robotic Vision---lifelong object recognition challenge Baseline Model
-This is a PyTorch implementation of basline model of IROS2019 lifelong object recognition challenge ([link](https://lifelong-robotic-vision.github.io/competition/Object-Recognition.html)).
+This is a PyTorch implementation of baseline model of IROS2019 lifelong object recognition challenge ([link](https://lifelong-robotic-vision.github.io/competition/Object-Recognition.html)).
 This repository provides:
 * Pretrained models for each batches 
 * MobileNetV2 [[1](##References)]  backbone for the task (using random crop for input images)
