@@ -6,7 +6,7 @@ This repository provides:
 * Pretrained models for specific batches: 
   * Training schemes: Two training methods (naive and cumulative) using backbone model are provided. Detailed definition of these two schemes are included in this  paper [[1](##References)].
   * Hyperparameters: We set 50 epochs for training and 30 epochs for finetuning each task with `learning_rate = 0.01`, `momentum=0.9`, `weight_decay=5e-4`,`batch_size=16`. 
-  * Model files: Note that models after batch 5 and batch 6 for multitask (cumulative) training scheme (named `model_1.pth` and `model_2.pth`), model after batch 9 for finetuning (naive) scheme (named `model_3.pth`) are provided under `/model`. 
+  * Model files: Note that models after batch 3 and batch 5 for multitask (cumulative) training scheme (named `model_1.pth` and `model_2.pth`), model after batch 9 for finetuning (naive) scheme (named `model_3.pth`) are provided under `/model`. 
   * To run model: Feel free to load specific model in `evaluate.py`.
 * Script for running the baseline model (with dataloader module for reference):
   * You can load the pretrained model and will generate results samples in your specified directory. 
