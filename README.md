@@ -10,7 +10,7 @@ This repository provides:
   * To run model: Feel free to load specific model in `evaluate.py`.
 * Script for running the baseline model (with dataloader module for reference):
   * You can load the pretrained model and will generate results samples in your specified directory. 
-  * The output files (in `csv`) are the same format with the files to be submitted on our official online judgement platform CodaLab ([link](https://codalab.lri.fr/competitions/581)). The script will generate nine results csv files and our platform will compute the average precision score automatically. 
+  * The output files (in `csv`) are in the same format and name with the files to be submitted on our official online judgement platform CodaLab ([link](https://codalab.lri.fr/competitions/581)). The script will generate nine results csv files and our platform will compute the average precision score automatically. 
 
 
 ## Requirements
