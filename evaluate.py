@@ -1,6 +1,6 @@
 import sys
 import time
-
+import os
 import pandas as pd
 import torch
 import torch.nn as nn
@@ -37,6 +37,7 @@ class BatchData(Dataset):
 
     def format_images(self, path, datatype, batch_index):
         path_prefix = '{}/{}/batch{}/'.format(path, datatype, batch_index)
+        path_prefix = os.path.join(path,datatype,'batch'+str(batch_index))+'/'
         table = pd.read_csv(path_prefix + 'label.csv', index_col=0)
         data_list = [path_prefix + filename for filename in table['file name'].tolist()]
         label_list = table['label'].tolist()
@@ -173,4 +174,4 @@ if __name__ == '__main__':
     for test_task in range(9):
         print('[Test in task{}]:'.format(test_task + 1))
         test(test_loader_list[test_task], is_save_csv=True,
-             csv_name='{}/test_batch{}.csv'.format(output_path, test_task + 1))
+             csv_name=os.path.join(output_path,'test_batch'+str(test_task+1)+'.csv'))
