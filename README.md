@@ -6,7 +6,7 @@ This repository provides:
 * Script for running the baseline model (with dataloader module for reference)
 
 ## Requirements
--The current version of the code has been tested with following libs:
+The current version of the code has been tested with following libs:
 
 * `python 3.7`
 * `numpy 1.16.2`
