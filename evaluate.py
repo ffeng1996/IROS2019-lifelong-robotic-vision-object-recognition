@@ -168,7 +168,8 @@ if __name__ == '__main__':
     test_loader_list = [torch.utils.data.DataLoader(batch, batch_size=16, shuffle=False, num_workers=2)
                         for batch in test_batch_list]
 
-    state_dict = torch.load('./model/finetuned_9.pth', map_location='cpu')
+# load your models
+    state_dict = torch.load('./model/model_1.pth', map_location='cpu')
     net.load_state_dict(state_dict)
 
     for test_task in range(9):
